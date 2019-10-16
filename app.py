@@ -1,8 +1,9 @@
 from flask import Flask, render_template,request, Response
 from flask_restful import Resource, Api
-
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 api=Api(app)
 	
 
